@@ -38,8 +38,17 @@ window.GUIDE_SECTIONS['rule'] = {
       title: '戦闘系ルール',
       required: true,
       pages: [
-        { id: 'org-pvp',   title: 'PvP・非PvPゾーン' },
-        { id: 'org-scene', title: '特殊物資争奪戦' }
+        { id: 'org-pvp',   title: 'PvP・非PvPゾーン' }
+      ]
+    },
+    {
+      // 組織どうしがぶつかる場面。参加できる人が決まっていて、
+      // 非PvPエリアでも参加者どうしなら戦える。混ぜると見分けが付かないので分けている
+      title: 'PvPコンテンツ',
+      required: true,
+      pages: [
+        { id: 'org-scene', title: '特殊物資争奪戦' },
+        { id: 'org-board', title: '受注ボード' }
       ]
     }
   ]
