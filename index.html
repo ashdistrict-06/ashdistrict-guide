@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- data-theme="dark" で配色をダークに固定する（見る人の OS 設定に従わせない）。
+     背景画像がダーク前提で作られていること、アドミン間で見た目を揃えることが理由。
+     ライトに戻すなら data-theme ごと消す（OS 設定に従う状態に戻る）。 -->
+<html lang="ja" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AshDistrict プレイヤーガイド</title>
+<!-- CSS を読み込む前に、ゲーム内（NUI）か Web かでクラスを分ける。
+     このガイドは ui_page なので常に画面に載っており、透明化に失敗すると
+     ゲーム画面を覆い隠してしまう（2026-09-03 に実際に起きた）。
+     guide.js の中で付けていると、その手前で JS が止まったときに真っ暗になるため、
+     ここで先に付けて保険にしている。guide.js 側で付け直しても害はない。
+
+     地の色を付けるのは web のときだけ。この script 自体が動かなかった場合は
+     どちらのクラスも付かず、背景は透明のまま＝ゲーム画面は隠れない。 -->
+<script>
+  document.documentElement.classList.add(
+    typeof window.GetParentResourceName === 'function' ? 'nui' : 'web'
+  );
+</script>
+<!-- ブラウザのタブに出すアイコン。2つ置いているのは、拡大縮小をブラウザ任せに
+     すると 16px でぼやけるため。高DPI の画面では 32px のほうが使われる。
+     ゲーム内（NUI）にはタブが無いので効かないが、書いてあっても害はない。 -->
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="stylesheet" href="guide.css">
+</head>
+<body>
+<div class="guide" id="guide">
+  <header class="web-head">
+    <div class="eyebrow">ASHDISTRICT</div>
+    <h1>PLAYER GUIDE</h1>
+    <p class="lede">サーバーの決まりから、街での過ごし方・持ち物・クラフト・ミッションまで。ゲーム内で 📖 から開けるガイドと同じ内容です。</p>
+    <button type="button" class="drawer-btn" id="drawer-btn" aria-expanded="false">☰ 目次</button>
+  </header>
+
+  <div class="chrome" id="chrome">
+    <!-- ゲーム内のヘッダー帯。英字は Bahnschrift で出る（--disp）ので英語表記にしている -->
+    <span>PLAYER GUIDE</span>
+    <button type="button" class="chrome-close" id="chrome-close" title="閉じる（ESC）" aria-label="閉じる">✕</button>
+  </div>
+
+  <div class="layout">
+    <nav class="side" id="side" aria-label="ガイドの目次">
+      <div class="side-title">CONTENTS</div>
+      <div id="side-tree"></div>
+    </nav>
+    <div class="main" id="main">
+      <article class="article" id="article"></article>
+    </div>
+  </div>
+</div>
+
+<script src="pages.js"></script>
+<script src="guide.js"></script>
+</body>
+</html>

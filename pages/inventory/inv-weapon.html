@@ -1,0 +1,99 @@
+<h2>武器について</h2>
+<p class="sub">装備・アタッチメント・弾の装填</p>
+
+<h3>装備する</h3>
+<p>インベントリから<strong>装備欄へ持っていくだけ</strong>です。</p>
+
+<h3>持ち替える</h3>
+<p>装備欄に入れておくと、インベントリを開かずに持ち替えられます。</p>
+<div class="tablebox">
+    <table>
+        <thead><tr><th>キー</th><th>持ち替えるもの</th></tr></thead>
+        <tbody>
+            <tr><td class="nowrap">1</td><td>メイン武器1</td></tr>
+            <tr><td class="nowrap">2</td><td>メイン武器2</td></tr>
+            <tr><td class="nowrap">3</td><td>サブ武器</td></tr>
+            <tr><td class="nowrap">4</td><td>近接武器</td></tr>
+        </tbody>
+    </table>
+</div>
+<p><strong>装備欄に入っていない武器は、番号キーでは出せません。</strong></p>
+
+<h3>アタッチメントを付ける</h3>
+<p>武器を右クリックし、<strong>アタッチメント</strong>を選ぶと専用の画面が開きます。</p>
+<figure class="shot"><img src="img/inventory/wpn-menu.webp" alt="武器の右クリックメニュー"></figure>
+
+<p>付けられる場所は次のとおりです。武器によって使える場所が違います。</p>
+<div class="pair">
+    <div>
+        <div class="tablebox">
+            <table>
+                <thead><tr><th>場所</th><th>何の部分か</th></tr></thead>
+                <tbody>
+                    <tr><td class="nowrap">MAG</td><td>マガジン</td></tr>
+                    <tr><td class="nowrap">MUZZLE</td><td>銃口</td></tr>
+                    <tr><td class="nowrap">SIGHT</td><td>照準</td></tr>
+                    <tr><td class="nowrap">GRIP</td><td>グリップ</td></tr>
+                    <tr><td class="nowrap">STOCK</td><td>ストック</td></tr>
+                    <tr><td class="nowrap">BARREL</td><td>バレル</td></tr>
+                    <tr><td class="nowrap">FLASHLIGHT</td><td>ライト</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <figure class="shot"><img src="img/inventory/wpn-attach.webp" alt="アタッチメントの画面"></figure>
+</div>
+
+<ul>
+    <li>右の<strong>所持アタッチメント</strong>に、いま持っているものが出ます。<strong>クリックすると装着</strong>されます</li>
+    <li><strong>入れ物の中に入っているアタッチメントは出てきません。</strong>リグやバックパックから出しておいてください</li>
+    <li>付けると<strong>性能が変わります</strong>。画面の下に、リコイル・集弾率・エルゴ・有効射程・リロード速度・重量が出ます</li>
+</ul>
+
+<figure class="shot"><img src="img/inventory/wpn-attach-done.webp" alt="アタッチメントを付けたあと"></figure>
+
+<p>下に出る数値の意味は次のとおりです。</p>
+<div class="tablebox">
+    <table>
+        <thead><tr><th>項目</th><th>意味</th></tr></thead>
+        <tbody>
+            <tr><td class="nowrap">リコイル</td><td>撃ったときの跳ね上がり。<strong>小さいほど</strong>狙いがぶれません</td></tr>
+            <tr><td class="nowrap">集弾率</td><td>弾のまとまり。<strong>高いほど</strong>狙ったところに当たります</td></tr>
+            <tr><td class="nowrap">エルゴ</td><td>扱いやすさ。<strong>高いほど</strong>構えや取り回しが速くなります</td></tr>
+            <tr><td class="nowrap">有効射程</td><td>威力を保ったまま届く距離。<strong>長いほど</strong>遠くを狙えます</td></tr>
+            <tr><td class="nowrap">リロード速度</td><td>マガジンを替えるのにかかる時間。<strong>上がるほど遅くなります</strong></td></tr>
+            <tr><td class="nowrap">重量</td><td>武器そのものの重さ。持ち物の重量に加わります</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="note">
+いま変わるのは<strong>この数値だけ</strong>です。たとえばスコープを付けても、
+<strong>覗いたときに倍率が上がるわけではありません</strong>。見た目と数値だけが変わります。
+今後の調整で変わる可能性があります。
+</div>
+
+<div class="note warn">
+    <span class="warn-title">⚠️ 数字の +− だけで判断しない</span>
+    <strong>緑は良くなる、赤は悪くなる</strong>という意味です。
+    項目によって、数字が増えるほど良いものと、増えるほど悪いものがあります。<br>
+    <strong>付ければ強くなるとは限りません。</strong>色を見て決めてください。
+</div>
+
+<h3>弾を込める</h3>
+<p><strong>マガジンを右クリック</strong>して <strong>弾を込める</strong> を選びます。<strong>弾を抜く</strong>もここにあります。</p>
+
+<figure class="shot"><img src="img/inventory/wpn-mag-menu.webp" alt="マガジンの右クリックメニュー"></figure>
+
+<ul>
+    <li><strong>対応した弾が必要です。</strong>マガジンごとに使える弾が決まっています</li>
+    <li><strong>1発ずつ込めるので時間がかかります</strong></li>
+</ul>
+
+<figure class="shot"><img src="img/inventory/wpn-loading.webp" alt="弾を込めている途中"></figure>
+
+<div class="note"><strong>弾を込めたマガジンを、あらかじめ何個か用意しておくと便利です。</strong>戦っている最中に込め直す時間はありません。</div>
+
+<h3>リロードする</h3>
+<p>武器を構えているときに <strong>R</strong> を押すと、マガジンを替えてリロードします。</p>
+<p><strong>インベントリに、その武器に合うマガジンがあるときだけできます。</strong></p>

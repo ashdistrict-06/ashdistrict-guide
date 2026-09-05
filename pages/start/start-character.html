@@ -1,0 +1,105 @@
+<h2>キャラクター作成</h2>
+<p class="sub">街に入るまで</p>
+<p>ログインしたら、まず自分のキャラクターを作ります。</p>
+
+<h2>スロットを選ぶ</h2>
+<p>画面の右に<strong>緑の矢印のボックス</strong>があります。ここをクリックすると、キャラクターの一覧が開きます。</p>
+
+<div class="shots">
+    <figure class="shot"><img src="img/start/char-arrow.webp" alt="画面右の緑の矢印"></figure>
+    <figure class="shot"><img src="img/start/char-slot.webp" alt="空きスロット"></figure>
+</div>
+
+<p><strong>空きスロット</strong>をクリックすると、基本情報の入力に進みます。</p>
+
+<h2>基本情報を入れる</h2>
+<div class="pair">
+    <div>
+        <ul>
+            <li>街での名前は<strong>「苗字 名前」</strong>の形で表示されます</li>
+            <li><strong>身長と体重は見た目に反映されません</strong></li>
+        </ul>
+        <figure class="shot person sm">
+            <figcaption>名前はここに出ます</figcaption>
+            <img src="img/start/char-name.webp" alt="名前が出ているキャラクター">
+        </figure>
+    </div>
+    <figure class="shot"><img src="img/start/char-input.webp" alt="基本情報の入力画面"></figure>
+</div>
+
+<h2>見た目を作る</h2>
+<p><strong>作成</strong>を押すと、見た目を作る画面に入ります。</p>
+
+<div class="note warn">
+    <span class="warn-title">⚠️ あとから変えられないもの</span>
+    <strong>モデルは最初に選んだものから変更できません。</strong>
+    <strong>遺伝と顔の特徴も、作成したあとは変えられません。</strong>じっくり決めてください。
+</div>
+
+<ul>
+    <li>服装には<strong>職業専用のもの</strong>があり、その職業でない人が着られない組み合わせがあります（<a href="#org-dress">服装</a>）</li>
+</ul>
+
+<figure class="shot"><img src="img/start/char-appearance.webp" alt="外見を作る画面"></figure>
+
+<p>満足のいくキャラクターができたら、<span class="mat"><strong>ディスクマーク</strong><img class="ico after" src="img/start/char-save-icon.webp" alt=""></span>を押します。確認画面が出るので<strong>はい</strong>を選ぶと確定です。</p>
+
+<figure class="shot"><img src="img/start/char-save.webp" alt="外見を保存の確認"></figure>
+
+<p>これで街を歩けるようになります。</p>
+
+<h2>初期装備</h2>
+<p><strong>Tab</strong> でインベントリを開くと、最初から持っているものを確認できます（<a href="#inv-overview">画面の見かた</a>）。</p>
+
+<figure class="shot"><img src="img/start/char-inventory.webp" alt="初期装備のインベントリ"></figure>
+
+<div class="note"><strong>キャラクターを作っている間も、食糧と水分は減っていきます。</strong>街に出たら早めに次の2つで回復してください。</div>
+
+<div class="tablebox">
+    <table>
+        <thead><tr><th>アイテム</th><th>回復するもの</th></tr></thead>
+        <tbody>
+            <tr><td class="nowrap"><span class="mat"><img class="ico" src="img/items/mil_meal_tray.webp" alt="">補給用ミールトレイ</span></td><td>食糧</td></tr>
+            <tr><td class="nowrap"><span class="mat"><img class="ico" src="img/items/mil_water_pack.webp" alt="">配給水パック</span></td><td>水分</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<h2>名前まわりの設定</h2>
+<p>チャット欄から <strong>/name</strong> と打つと、名前についての操作ができます（<a href="#city-commands">コマンド</a>）。</p>
+
+<figure class="shot"><img src="img/start/name-menu.webp" alt="名前メニュー"></figure>
+
+<div class="tablebox">
+    <table>
+        <thead><tr><th>項目</th><th>できること</th></tr></thead>
+        <tbody>
+            <tr><td class="nowrap">キャラクター名を変更</td><td>苗字と名前を変えます</td></tr>
+            <tr><td class="nowrap">名前ラベルを設定</td><td>名前の上に出るラベルを設定します</td></tr>
+            <tr><td class="nowrap">ニックネーム設定</td><td>表示名とニックネームを管理します</td></tr>
+            <tr><td class="nowrap">カスタムマーク</td><td>名前の横に出すマークを付けます</td></tr>
+            <tr><td class="nowrap">名前を隠す</td><td>他のプレイヤーから名前を見えなくします</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<h3>カスタムマーク</h3>
+
+<figure class="shot"><img src="img/start/name-mark.webp" alt="カスタムマークの分類"></figure>
+
+<div class="tablebox">
+    <table>
+        <thead><tr><th>分類</th><th>内容</th></tr></thead>
+        <tbody>
+            <tr><td class="nowrap">ランク・権限マーク</td><td>権限に応じたマークです</td></tr>
+            <tr><td class="nowrap">その他のマーク</td><td>配信中を示す <strong>Streamer</strong> などがあります</td></tr>
+            <tr><td class="nowrap">職業マーク</td><td>特定のジョブだけが付けられます（任意）</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="note warn">
+    <span class="warn-title">⚠️ 配信するときは Streamer マークを付けてください</span>
+    <strong>配信中は必ず Streamer のマークを付けて、周りの人から分かるようにしてください。</strong>
+    配信についての決まりは<a href="#rule-stream">配信について</a>を読んでください。
+</div>

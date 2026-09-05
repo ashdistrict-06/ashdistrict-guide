@@ -1,0 +1,55 @@
+<h2>所属を管理する</h2>
+<p class="sub">ジョブと組織をひとつの画面で</p>
+<p>チャット欄から <strong>/jobm</strong> と打つと、所属の管理画面が開きます。ジョブもレジスタンスも、ここでまとめて扱います。</p>
+
+<!-- SHOT: img/affil/affil-mine.webp — /jobm で開く画面。上に3つのタブが並んでいる状態 -->
+
+<div class="tablebox">
+    <table>
+        <thead><tr><th>タブ</th><th>できること</th><th>使える人</th></tr></thead>
+        <tbody>
+            <tr><td class="nowrap">現在の所属</td><td>出退勤、ジョブの切り替え、辞職・脱退</td><td class="nowrap">全員</td></tr>
+            <tr><td class="nowrap">メンバー</td><td>所属している人の一覧を見る</td><td class="nowrap"><a href="#affil-rank">人事ができる階級</a></td></tr>
+            <tr><td class="nowrap">採用</td><td>人を誘う</td><td class="nowrap"><a href="#affil-rank">人事ができる階級</a></td></tr>
+        </tbody>
+    </table>
+</div>
+
+<p>「現在の所属」の中は <strong>ジョブ</strong>・<strong>レジスタンス</strong>・<strong>お店</strong>の3つに分かれています。画面右上に出ている所属の表示と同じ区切りです。</p>
+
+<h2>出退勤</h2>
+<p>ジョブの仕事をするときは、<strong>出勤してから</strong>行ってください。</p>
+<ul>
+    <li><strong>出勤する</strong>を押すと勤務中になり、表示が<strong>出勤中</strong>に変わります。もう一度押すと退勤です</li>
+    <li>出勤中の決まりは組織ごとに違います。自分の組織のルールを確認してください（<a href="#org-arc">軍（ARC）</a> / <a href="#org-fmu">救護団体（FMU）</a> / <a href="#org-mechanic">メカニック</a> / <a href="#org-corp">企業・店舗</a>）</li>
+</ul>
+
+<h2>掛け持ちできる組み合わせ</h2>
+<p>いくつかの組織は<strong>同時に所属できません</strong>。</p>
+<div class="tablebox">
+    <table>
+        <thead><tr><th>組織</th><th>掛け持ちできるもの</th></tr></thead>
+        <tbody>
+            <tr><td class="nowrap">ARC</td><td>飲食店</td></tr>
+            <tr><td class="nowrap">FMU</td><td>飲食店</td></tr>
+            <tr><td class="nowrap">メカニック</td><td>飲食店。<strong>メカニックどうしは掛け持ちできません</strong></td></tr>
+            <tr><td class="nowrap">レジスタンス</td><td>飲食店</td></tr>
+            <tr><td class="nowrap">飲食店</td><td>上のどれか1つ。飲食店どうしも掛け持ちできます</td></tr>
+        </tbody>
+    </table>
+</div>
+<p>つまり <strong>ARC・FMU・メカニック・レジスタンスは、この中から1つだけ</strong>です。飲食店はそれに加えて持てて、<strong>飲食店どうしの掛け持ちもできます</strong>。</p>
+
+<div class="note">画面の右上に出るのは<strong>いま選んでいるものだけ</strong>です。掛け持ちしていても、選んでいないほうは出ません。</div>
+
+<h2>辞職・脱退</h2>
+<ul>
+    <li>ジョブは<strong>辞職</strong>、レジスタンスは<strong>脱退</strong>です</li>
+    <li><strong>人事のできる階級でも抜けられます</strong>。ただし、その組織で人事ができるのが自分だけの場合は、抜けたあとに <strong>Discord でアドミンへ連絡してください</strong></li>
+</ul>
+
+<div class="note warn">
+    <span class="warn-title">⚠️ 辞職と脱退は取り消せません</span>
+    入り直すには、その組織の人事担当に採用してもらう必要があります。
+    そのとき<strong>階級はいちばん下からやり直し</strong>です。
+</div>

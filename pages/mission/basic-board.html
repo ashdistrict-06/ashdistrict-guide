@@ -1,0 +1,24 @@
+<h2>掲示板の見かた</h2>
+<p class="sub">受けられない理由は必ず表示される</p>
+
+<figure class="shot">
+    <figcaption>行の右端に状態が出ます</figcaption>
+    <img src="img/mission/board-open.webp" alt="掲示板。受注可能と条件未達が並んでいる状態">
+</figure>
+<p>掲示板には受注できるミッションが並びます。受けられないものにも理由が表示されるので、何をすれば受けられるようになるかが分かります。</p>
+<div class="tablebox">
+    <table>
+        <thead><tr><th>表示</th><th>意味</th></tr></thead>
+        <tbody>
+            <tr><td><span class="badge ok">受注可能</span></td><td>受けられます</td></tr>
+            <tr><td><span class="badge busy">他の者が対応中</span></td><td>別のプレイヤーが対応中（<a href="#basic-cooldown">早い者勝ち</a>を参照）</td></tr>
+            <tr><td><span class="badge cd">しばらく待つ（残り12分）</span></td><td>クールダウン中です。カッコ内が再受注できるまでの残り時間（分・切り上げ）</td></tr>
+            <tr><td><span class="badge cd">全体で待機中（残り8分）</span></td><td>ジョブミッションのクールダウン中です。サーバー全体で共有されるため、自分がクリアしていなくても待ちます</td></tr>
+            <tr><td><span class="badge locked">条件未達</span></td><td>レベル不足</td></tr>
+            <tr><td><span class="badge squad">要スクワッド</span></td><td>スクワッドの仲間がオンラインにいないと受けられません</td></tr>
+            <tr><td><span class="badge locked">他のミッション進行中</span></td><td>受注枠がいっぱいです。今のミッションを終わらせるか断念してください</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="note"><strong>「他の者が対応中」と「しばらく待つ」は別物です。</strong>前者は他の組が終われば<strong>すぐ</strong>受けられるようになります。後者は決められた時間が過ぎるまで待ちます（<a href="#basic-cooldown">クールダウン</a>）。</div>

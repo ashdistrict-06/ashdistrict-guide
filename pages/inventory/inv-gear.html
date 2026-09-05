@@ -1,0 +1,72 @@
+<h2>持ち物と装備</h2>
+<p class="sub">GEAR の中身</p>
+
+<h3>所持数と重量</h3>
+<p>アイテムには大きさと重さがあります。インベントリのほうにも枠と持てる重量があります。</p>
+<figure class="shot"><img src="img/inventory/inv-weight.webp" alt="重量の表示"></figure>
+<ul>
+    <li><strong>枠がいっぱいなら、それ以上は持てません</strong></li>
+    <li><strong>枠が空いていても、重量がいっぱいなら持てません</strong></li>
+</ul>
+<p>どちらか一方でも上限に達すると、それ以上は入りません。<strong>持てないときは、この2つのどちらかです。</strong></p>
+
+<h3>アイテムを右クリックする</h3>
+<p>アイテムを右クリックすると、そのアイテムに対してできることが出ます。アイテムによって出る項目は変わります（武器なら「アタッチメント」、マガジンなら「弾を込める」など）。</p>
+<div class="pair img-left">
+    <figure class="shot"><img src="img/inventory/inv-context.webp" alt="右クリックで出るメニュー"></figure>
+    <div>
+        <div class="tablebox">
+    <table>
+        <thead><tr><th>項目</th><th>できること</th></tr></thead>
+        <tbody>
+            <tr><td class="nowrap">使用</td><td>使う・飲食する など。<strong>使えないアイテムは押しても何も起きません</strong></td></tr>
+            <tr><td class="nowrap">詳細</td><td>そのアイテムの説明を見ます</td></tr>
+            <tr><td class="nowrap">分割</td><td>まとまっているアイテムの数を分けます</td></tr>
+            <tr><td class="nowrap">ドロップ</td><td>地面に捨てます。<strong>「地面」という枠</strong>が出て、そこに入ります</td></tr>
+            <tr><td class="nowrap">削除</td><td><strong>そのアイテムを完全に消します。</strong>戻せません</td></tr>
+        </tbody>
+    </table>
+        </div>
+    </div>
+</div>
+
+<h3>装備欄</h3>
+<div class="pair">
+    <div>
+        <div class="tablebox">
+            <table>
+                <thead><tr><th>スロット</th><th>入れるもの</th></tr></thead>
+                <tbody>
+                    <tr><td class="nowrap">PRIMARY 1 / 2</td><td>メイン武器（<a href="#inv-weapon">武器について</a>）</td></tr>
+                    <tr><td class="nowrap">SIDEARM</td><td>サブ武器</td></tr>
+                    <tr><td class="nowrap">MELEE</td><td>近接武器</td></tr>
+                    <tr><td class="nowrap">PLATE</td><td>アーマープレート</td></tr>
+                    <tr><td class="nowrap">THROWABLE</td><td>投げるもの</td></tr>
+                    <tr><td class="nowrap">RIG</td><td>リグ（胸に着ける入れ物）</td></tr>
+                    <tr><td class="nowrap">SECURE</td><td>セキュアコンテナ</td></tr>
+                    <tr><td class="nowrap">BACKPACK</td><td>バックパック</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+<figure class="shot"><img src="img/inventory/inv-equip.webp" alt="装備欄"></figure>
+</div>
+<p><strong>スロットが見えないときは、下にスクロール</strong>してください。画面に収まりきっていないだけです。</p>
+
+<h3>持てる量を増やす</h3>
+<p>RIG・SECURE・BACKPACK に入れ物を装備すると、枠が増えます。</p>
+
+<div class="note"><strong>増えるのは枠だけで、持てる重さの上限は変わりません。</strong>入れ物をいくつ着けても、重量がいっぱいになればそれ以上は持てません。</div>
+
+<h3>セキュアコンテナ</h3>
+<p>SECURE に装備する入れ物です。<strong>ダウンしても中身が落ちません</strong>（<a href="#inv-drop">落とすもの・残るもの</a>）。</p>
+<p>材料を集めてクラフトで作ります。材料は特定のコンテンツで手に入ります。</p>
+<p>α・β・γ の3種類があり、入れられる枠が違います。</p>
+
+<div class="note warn">
+    <span class="warn-title">⚠️ 作る前に、中身を空にしてください</span>
+    <strong>次の段階を作るときは、前の段階のコンテナを材料に使います。</strong>
+    このとき<strong>中に入っていたものは消えます。</strong><br>
+    <strong>必ず空にしてから作ってください。</strong>
+</div>
+

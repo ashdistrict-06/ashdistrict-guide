@@ -1,0 +1,115 @@
+<h2>治療について</h2>
+<p class="sub">部位ごとのHPと、使うアイテム</p>
+<p>体力は<strong>ひとつのHPではありません</strong>。<strong>7つの部位それぞれにHP</strong>があります。</p>
+
+<h3>部位ごとのHP</h3>
+<div class="pair">
+    <div>
+        <div class="tablebox">
+            <table>
+                <thead><tr><th>部位</th><th>最大HP</th><th>0 になると</th></tr></thead>
+                <tbody>
+                    <tr><td class="nowrap">頭</td><td>35</td><td><strong>即ダウン</strong></td></tr>
+                    <tr><td class="nowrap">胸</td><td>85</td><td><strong>即ダウン</strong></td></tr>
+                    <tr><td class="nowrap">腹</td><td>70</td><td>破壊状態</td></tr>
+                    <tr><td class="nowrap">腕（左・右）</td><td>60</td><td>破壊状態</td></tr>
+                    <tr><td class="nowrap">脚（左・右）</td><td>65</td><td>破壊状態</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+<figure class="shot"><img src="img/inventory/inv-treat-panel.webp" alt="治療の画面"></figure>
+</div>
+<p><strong>頭と胸は 0 になった時点でダウンです。</strong>ほかの部位は破壊状態になります（<a href="#inv-down">ダウンすると</a>）。</p>
+
+<h3>体に起きる状態</h3>
+<p>いま起きている状態は、HEALTH の画面に<strong>タグで表示</strong>されます。</p>
+<div class="tablebox">
+    <table>
+        <thead><tr><th>状態</th><th>内容</th></tr></thead>
+        <tbody>
+            <tr><td class="nowrap">出血・軽</td><td>止血しないとHPが減り続けます</td></tr>
+            <tr><td class="nowrap">出血・重</td><td>軽より早くHPが減ります</td></tr>
+            <tr><td class="nowrap">骨折</td><td>腕・脚に起きます</td></tr>
+            <tr><td class="nowrap">部位破壊</td><td>その部位のHPが 0 になった状態</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<h3>治療のしかた</h3>
+<p>HEALTH の画面で<strong>治したい部位を選ぶ</strong>と、その部位に使えるアイテムが並びます。そこから選んで使います。</p>
+
+<h3>アイテムの入手</h3>
+<p>回復アイテムは<strong>自分でクラフト</strong>できます（<a href="#craft-how">使い方</a>）。<strong>救護団体（FMU）でも販売しています</strong>（<a href="#org-fmu">救護団体（FMU）</a>）。</p>
+<div class="note"><strong>一部のアイテムは FMU でしか買えません。</strong>作れないものがあったら、FMU を訪ねてください。</div>
+
+<h3>止血する</h3>
+<div class="tablebox">
+    <table>
+        <thead><tr><th>アイテム</th><th>治せる出血</th><th>HP回復</th></tr></thead>
+        <tbody>
+            <tr><td class="nowrap">簡易包帯</td><td>軽</td><td>+8</td></tr>
+            <tr><td class="nowrap">標準包帯</td><td>軽</td><td><strong>+15</strong></td></tr>
+            <tr><td class="nowrap">重度止血パック</td><td><strong>軽・重どちらも</strong></td><td>+5</td></tr>
+            <tr><td class="nowrap">即効止血剤</td><td>重のみ</td><td>なし</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<h3>骨折を治す</h3>
+<div class="tablebox">
+    <table>
+        <thead><tr><th>アイテム</th><th>効果</th></tr></thead>
+        <tbody>
+            <tr><td class="nowrap">副木</td><td>腕・脚の骨折を<strong>完治</strong>させます</td></tr>
+            <tr><td class="nowrap">即効鎮痛剤</td><td>骨折を <strong>2分間</strong> 抑えます</td></tr>
+            <tr><td class="nowrap">持続鎮痛剤</td><td>骨折を <strong>4分間</strong> 抑えます</td></tr>
+        </tbody>
+    </table>
+</div>
+<p><strong>鎮痛剤で骨折の完治はできません。</strong>時間が過ぎればまた骨折の状態に戻ります。治すのは副木だけです。</p>
+
+<h3>破壊された部位を戻す</h3>
+<div class="tablebox">
+    <table>
+        <thead><tr><th>アイテム</th><th>効果</th></tr></thead>
+        <tbody>
+            <tr><td class="nowrap">縫合キット</td><td>破壊された部位を <strong>HP1</strong> で復旧し、<strong>その部位の骨折も解除</strong>します。<strong>頭・胸には使えません</strong></td></tr>
+        </tbody>
+    </table>
+</div>
+
+<h3>HPを回復する</h3>
+<div class="tablebox">
+    <table>
+        <thead><tr><th>アイテム</th><th>対象</th><th>1回の回復</th><th>使える回数</th></tr></thead>
+        <tbody>
+            <tr><td class="nowrap">メドキット</td><td>選んだ1部位</td><td><strong>+40</strong></td><td>10回</td></tr>
+            <tr><td class="nowrap">血液パック (30ml)</td><td>全部位それぞれ</td><td>+10</td><td>3回</td></tr>
+            <tr><td class="nowrap">血液パック (50ml)</td><td>全部位それぞれ</td><td>+10</td><td>5回</td></tr>
+            <tr><td class="nowrap">血液パック (80ml)</td><td>全部位それぞれ</td><td>+10</td><td>8回</td></tr>
+            <tr><td class="nowrap">血液パック (MAX)</td><td>全部位それぞれ</td><td><strong>+15</strong></td><td>10回</td></tr>
+        </tbody>
+    </table>
+</div>
+<p><strong>使いかけのまま持ち歩けます。</strong>残量は1つずつ覚えていて、<strong>0 になると無くなります</strong>。</p>
+
+<div class="note warn">
+    <span class="warn-title">⚠️ 破壊された部位には回復アイテムが効きません</span>
+    <strong>先に縫合キットで復旧してください。</strong>HP1 に戻ってから、回復アイテムが使えるようになります。
+</div>
+
+<h3>他人を蘇生する</h3>
+<div class="tablebox">
+    <table>
+        <thead><tr><th>アイテム</th><th>効果</th></tr></thead>
+        <tbody>
+            <tr><td class="nowrap">蘇生キット</td><td>ダウンした<strong>他の人</strong>を蘇生します。全部位が HP10 になり、<strong>出血と骨折もすべて解除</strong>されます</td></tr>
+        </tbody>
+    </table>
+</div>
+<ul>
+    <li><strong>自分には使えません</strong></li>
+    <li>相手から <strong>3m 以内</strong>にいる必要があります</li>
+    <li><strong>途中で動くと中断されます</strong></li>
+</ul>
