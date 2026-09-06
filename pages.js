@@ -16,7 +16,7 @@
 // 直し忘れると tools/guide_check.lua が注意を出す。
 window.GUIDE = {
   version: '2.0.0',
-  updated: '2026-09-05',
+  updated: '2026-09-06',
   // 開いたときに最初に表示するページ（URL に # が付いていないとき）。
   // 目次の一番上に出るページとは別なので注意する。
   home: 'server-about',
