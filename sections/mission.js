@@ -96,11 +96,11 @@ window.GUIDE_SECTIONS['mission'] = {
       pages: [
         {
           id: 'story-recorder',
-          title: '記録者と章選択'
+          title: '記録者'
         },
         {
           id: 'story-phase',
-          title: 'Phase とワイプ'
+          title: '章の公開'
         },
         {
           id: 'story-sub',
