@@ -16,13 +16,13 @@
 // 直し忘れると tools/guide_check.lua が注意を出す。
 window.GUIDE = {
   version: '2.0.0',
-  updated: '2026-10-29',
+  updated: '2026-10-30',
   // 開いたときに最初に表示するページ（URL に # が付いていないとき）。
   // 目次の一番上に出るページとは別なので注意する。
   home: 'server-about',
   parts: [
     // 部の名前は、中の大大見出しと同じにしない（目次で見分けがつかなくなる）
     { title: '基本事項', sections: ['server', 'rule'] },
-    { title: '街での生活', sections: ['start', 'city', 'inventory', 'skill', 'craft', 'shop', 'vehicle', 'affil', 'squad', 'mission'] },
+    { title: '街での生活', sections: ['start', 'city', 'inventory', 'skill', 'craft', 'shop', 'vehicle', 'affil', 'squad', 'mission', 'event'] },
   ],
 };
